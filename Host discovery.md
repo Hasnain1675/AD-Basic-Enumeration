@@ -1,0 +1,36 @@
+# Phase 1: Host Discovery 
+ 
+
+## Objective
+Identify all live hosts within the target network range.
+
+## fping Command
+```bash
+fping -agq 10.211.11.0/24
+```
+
+### Flags
+- -a : Show only alive hosts
+- -g : Generate target list from subnet
+- -q : Quiet mode
+
+### Output
+```
+10.211.11.1    (Gateway - out of scope)
+10.211.11.10   (Domain Controller)
+10.211.11.20   (Workstation)
+10.211.11.250  (VPN Server - out of scope)
+```
+
+## Nmap Ping Scan
+```bash
+nmap -sn 10.211.11.0/24
+```
+
+### Flag
+- -sn : Ping scan only, no port scanning
+
+## Save Hosts to File
+```bash
+echo "10.211.11.10" > hosts.txt
+echo "10.211.11.20" >> hosts.txt
