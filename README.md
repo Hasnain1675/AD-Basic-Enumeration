@@ -42,3 +42,23 @@ techniques on systems without explicit written permission.
 ## Platform
 TryHackMe — Jr Penetration Tester Path
 Room: AD Basic Enumeration
+## Screenshots
+
+### Host Discovery
+![Host Discovery](screenshots/host.txt.png)
+![Route](screenshots/route.png)
+
+### Network Enumeration
+![SMB Enumeration](screenshots/network enumerating with smb (smbpay.png)
+![RPC Client](screenshots/rpcclient.png)
+
+### User Enumeration
+![LDAP Search](screenshots/ldapsearch command.png)
+![Enum4linux](screenshots/enum4linux ng tool.png)
+
+### Password Spraying
+![Password Spraying](screenshots/password spraying .png)
+
+### Results
+![Flag](screenshots/flag.txt.png)
+![Login](screenshots/login.png)
